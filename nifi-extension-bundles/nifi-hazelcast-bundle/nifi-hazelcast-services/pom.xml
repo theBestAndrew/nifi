@@ -44,6 +44,24 @@
             <groupId>com.hazelcast</groupId>
             <artifactId>hazelcast</artifactId>
             <version>5.7.0</version>
+            <exclusions>
+              <exclusion>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>tools.jackson.core</groupId>
+                <artifactId>jackson-core</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>com.fasterxml.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+              </exclusion>
+              <exclusion>
+                <groupId>tools.jackson.core</groupId>
+                <artifactId>jackson-databind</artifactId>
+              </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 </project>

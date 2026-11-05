@@ -85,7 +85,7 @@ jobs:
       fail-fast: false
       matrix:
         os: [ ubuntu-24.04, macos-15 ]
-        version: [ 21, 25 ]
+        version: [ 21, 25, latest ]
     timeout-minutes: 120
     runs-on: ${{ matrix.os }}
     name: ${{ matrix.os }} Java ${{ matrix.version }}
@@ -106,7 +106,7 @@ jobs:
       - name: Set up Python 3.10
         uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.x'
       - name: Set up Astral uv
         run: pip install uv
 

@@ -103,7 +103,7 @@ jobs:
           java-version: ${{ matrix.version }}
           cache: 'maven'
 
-      - name: Set up Python 3.10
+      - name: Set up Python
         uses: actions/setup-python@v6
         with:
           python-version: '3.x'
